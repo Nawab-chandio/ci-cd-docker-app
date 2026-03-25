@@ -13,7 +13,7 @@ mongoose.connect(mongoURI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
 
-app.get("/", (req, res) => res.send("Hello from backend!"));
+app.get("/", (req, res) => res.send("Hello from Backend!"));
 app.use('/api/auth', authRoutes);
 
 app.listen(5000, () => console.log("Backend running on port 5000"));
